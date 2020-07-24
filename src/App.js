@@ -6,7 +6,7 @@ const App = () => {
   const handleForm = async (event) => {
     event.preventDefault();
     await fetch(
-      'https://love-calculator.p.rapidapi.com/getPercentage?fname=sezer&sname=es',
+       `https://love-calculator.p.rapidapi.com/getPercentage?fname=${girlName}&sname=${boyName}`,
       {
         method: 'GET',
         headers: {
